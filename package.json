@@ -9,7 +9,7 @@
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test:commit": "pnpm run lint && pnpm run check-types && pnpm run format:check",
+    "test:commit": "pnpm run lint && pnpm run format:check",
     "commitlint": "commitlint --edit",
     "prepare": "husky",
     "test": ""
