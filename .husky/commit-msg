@@ -1,5 +1,5 @@
-# echo "✅ chekcing commit message"
+echo "✅ chekcing commit message"
 
-# pnpm commitlint --edit "$1"
+pnpm commitlint --edit "$1"
 
-# echo "✅ FINALLY DONE"
+echo "✅ FINALLY DONE"
