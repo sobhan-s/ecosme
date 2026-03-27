@@ -1,5 +1,5 @@
-Directory structure:
-└── sobhan-s-ecosme/
+```txt
+ecosme/
     ├── README.md
     ├── auth-schema.ts
     ├── commitlint.config.js
