@@ -64,7 +64,7 @@ export function SignupForm() {
     <div className="w-full max-w-105">
       <Link href="/" className="flex items-center gap-1.5 mb-10">
         <span className="font-display font-black text-2xl tracking-tight uppercase">
-          Vantage
+          ecosme
         </span>
         <span className="w-3 h-3 bg-[#F15A2B] rounded-sm rotate-12 inline-block" />
       </Link>

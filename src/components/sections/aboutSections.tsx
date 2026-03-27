@@ -158,7 +158,7 @@ export function AboutSection({ data }: AboutProps) {
                       </span>
                     </div>
                     <div>
-                      <p className="font-semibold text-sm">Chris Vantage</p>
+                      <p className="font-semibold text-sm">Chris ecosme</p>
                       <p className="text-muted-foreground text-xs">
                         Founder & Creative Director
                       </p>

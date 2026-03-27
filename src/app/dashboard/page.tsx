@@ -25,7 +25,7 @@ async function getStats() {
   }
 }
 
-export const metadata = { title: 'Dashboard — Vantage' };
+export const metadata = { title: 'Dashboard — ecosme' };
 
 export default async function DashboardPage() {
   const session = await auth.api.getSession({ headers: await headers() });
@@ -53,7 +53,7 @@ export default async function DashboardPage() {
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5">
             <span className="font-display font-black text-xl uppercase tracking-tight">
-              Vantage
+              ecosme
             </span>
             <span className="w-2.5 h-2.5 bg-[#F15A2B] rounded-sm rotate-12 inline-block" />
           </Link>
