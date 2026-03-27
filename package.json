@@ -15,9 +15,25 @@
     "test": ""
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@sanity/client": "^7.20.0",
+    "@sanity/image-url": "^2.0.3",
+    "@types/nodemailer": "^7.0.11",
+    "better-auth": "^1.5.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.1",
+    "lucide-react": "^1.6.0",
     "next": "16.2.1",
+    "next-sanity": "^12.1.6",
+    "nodemailer": "^8.0.3",
+    "pg": "^8.20.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "sanity": "^5.18.0",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "lint-staged": {
     "*.{ts,tsx,js}": [
