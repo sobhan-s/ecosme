@@ -4,31 +4,32 @@ import { getSessionCookie } from 'better-auth/cookies';
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const session = getSessionCookie(request);
+  const session = getSessionCookie(request, {
+    cookieName: 'better-auth.session_token',
+  });
 
-  if (pathname.startsWith('/dashboard')) {
-    if (!session) {
-      const loginUrl = new URL('/login', request.url);
-      loginUrl.searchParams.set('redirect', pathname);
-      return NextResponse.redirect(loginUrl);
-    }
-  }
+  const isLoggedIn = !!session;
 
-  if (pathname.match(/^\/blog\/.+/)) {
-    if (!session) {
-      const loginUrl = new URL('/login', request.url);
-      loginUrl.searchParams.set('redirect', pathname);
-      return NextResponse.redirect(loginUrl);
-    }
-  }
-
-  if ((pathname === '/login' || pathname === '/signup') && session) {
+  const isAuthPage = pathname === '/login' || pathname === '/signup';
+  if (isAuthPage && isLoggedIn) {
     return NextResponse.redirect(new URL('/dashboard', request.url));
+  }
+
+  if (pathname.startsWith('/dashboard') && !isLoggedIn) {
+    const url = new URL('/login', request.url);
+    url.searchParams.set('redirect', pathname);
+    return NextResponse.redirect(url);
+  }
+
+  if (pathname.match(/^\/blog\/.+/) && !isLoggedIn) {
+    const url = new URL('/login', request.url);
+    url.searchParams.set('redirect', pathname);
+    return NextResponse.redirect(url);
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/blog/:path*', '/login', '/signup'],
+  matcher: ['/login', '/signup', '/dashboard/:path*', '/blog/:path*'],
 };
