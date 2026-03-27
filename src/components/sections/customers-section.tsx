@@ -41,8 +41,8 @@ export function CustomersSection({ data }: CustomersProps) {
         </p>
       </div>
 
-       <div className="relative flex overflow-hidden">
-         <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-[#fafaf9] to-transparent z-10 pointer-events-none" />
+      <div className="relative flex overflow-hidden">
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-[#fafaf9] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l from-[#fafaf9] to-transparent z-10 pointer-events-none" />
 
         <div className="flex gap-0 animate-marquee">

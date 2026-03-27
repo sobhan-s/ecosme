@@ -180,9 +180,9 @@ export function PricingSection({ data }: PricingProps) {
                     <span
                       className={cn(
                         !f.included &&
-                        (plan.highlighted
-                          ? 'text-white/30'
-                          : 'text-muted-foreground/50'),
+                          (plan.highlighted
+                            ? 'text-white/30'
+                            : 'text-muted-foreground/50'),
                       )}
                     >
                       {f.text}
