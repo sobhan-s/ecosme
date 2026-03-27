@@ -5,6 +5,11 @@ import { accounts } from '@/database/schema/accounts.schema';
 import { users } from '@/database/schema/user.schema';
 import { sessions } from '@/database/schema/session.schema';
 import { verifications } from '@/database/schema/verification.schema';
+import { config } from 'dotenv';
+
+config({
+  path: '.env',
+});
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
@@ -19,6 +24,13 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: false,
+  },
+  socialProviders: {
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+      scope: ['openid', 'email', 'profile'],
+    },
   },
   session: {
     expiresIn: 60 * 60 * 24 * 7,
