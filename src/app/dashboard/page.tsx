@@ -12,6 +12,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import Link from 'next/link';
+import { signOut } from '@/lib/authClient';
+import { Button } from '@/components/ui/button';
 
 async function getStats() {
   try {
@@ -68,14 +70,14 @@ export default async function DashboardPage() {
           >
             ← Back to site
           </Link>
-          <form action="/api/auth/sign-out" method="POST">
-            <button
-              type="submit"
-              className="flex items-center gap-2 h-9 px-4 border border-border rounded-lg text-sm font-medium hover:bg-foreground hover:text-background transition-all"
-            >
-              <LogOut size={14} /> Sign Out
-            </button>
-          </form>
+          {/* <Button
+            onClick={() => signOut()}
+            variant="outline" 
+            size="sm"
+            className="flex items-center gap-2 h-9 px-4 border border-border rounded-lg text-sm font-medium hover:bg-foreground hover:text-background transition-all"
+          >
+            <LogOut size={14} /> Sign Out
+          </Button> */}
         </div>
       </header>
 

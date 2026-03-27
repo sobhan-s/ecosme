@@ -22,7 +22,7 @@ export function BlogPreviewSection({ data }: BlogPreviewProps) {
   return (
     <section id="blog" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-         <div className="mb-10">
+        <div className="mb-10">
           <span className="inline-flex items-center border border-[#F15A2B] text-[#F15A2B] rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest mb-5">
             Blog
           </span>
@@ -43,7 +43,7 @@ export function BlogPreviewSection({ data }: BlogPreviewProps) {
           </span>
         </div>
 
-         <div className="flex flex-col">
+        <div className="flex flex-col">
           {posts.map((post) => (
             <Link key={post._id} href={`/blog/${post.slug}`} className="group">
               <div className="py-7 border-b border-border">
@@ -67,7 +67,7 @@ export function BlogPreviewSection({ data }: BlogPreviewProps) {
           ))}
         </div>
 
-         <div className="mt-8">
+        <div className="mt-8">
           <Link href="/blog">
             <button className="flex items-center gap-2 text-sm font-semibold text-[#F15A2B] hover:gap-3 transition-all">
               View all posts <ArrowUpRight size={15} />

@@ -39,15 +39,7 @@ export function NewsletterSection() {
       id="contact"
       className="py-24 bg-[#0f0f0f] relative overflow-hidden"
     >
-      {/* Decorative bg text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
-        <span className="font-display font-black text-[20rem] uppercase text-white/[0.02] leading-none tracking-tight">
-          SUB
-        </span>
-      </div>
-
       <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
         <span className="inline-flex items-center border border-white/15 rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white/40 mb-7">
           Newsletter
         </span>
@@ -81,7 +73,7 @@ export function NewsletterSection() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={status === 'loading'}
-                className="w-full h-13 px-5 py-0 h-12 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#F15A2B] focus:border-transparent transition-all disabled:opacity-50"
+                className="w-full px-5 py-0 h-12 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/25 focus:outline-none focus:ring-2 focus:ring-[#F15A2B] focus:border-transparent transition-all disabled:opacity-50"
               />
             </div>
             <button
