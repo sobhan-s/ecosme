@@ -6,7 +6,7 @@ import type { BlogPostPreview } from '@/interface/sanity.types';
 export const revalidate = 60;
 
 export const metadata = {
-  title: 'Blog Vantage',
+  title: 'Blog ecosme',
   description: 'Writing about design, development, and the things we build.',
 };
 

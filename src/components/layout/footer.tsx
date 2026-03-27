@@ -11,7 +11,7 @@ export function Footer({ settings }: FooterProps) {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-1.5">
           <span className="font-display font-black text-xl">
-            {settings?.siteName ?? 'Vantage'}
+            {settings?.siteName ?? 'ecosme'}
           </span>
           <span className="w-4 h-4 bg-orange rounded-sm rotate-12 inline-block" />
         </div>

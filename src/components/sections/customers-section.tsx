@@ -37,7 +37,7 @@ export function CustomersSection({ data }: CustomersProps) {
           </h2>
         </div>
         <p className="text-muted-foreground text-sm max-w-xs leading-relaxed md:text-right">
-          Join 350+ companies already building with Vantage.
+          Join 350+ companies already building with ecosme.
         </p>
       </div>
 

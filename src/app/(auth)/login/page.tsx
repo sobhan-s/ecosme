@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { LoginForm } from '@/components/auth/loginForm';
 import { FiLoader } from 'react-icons/fi';
 
-export const metadata = { title: 'Sign In - Vantage' };
+export const metadata = { title: 'Sign In - ecosme' };
 
 export default function LoginPage() {
   return (
