@@ -34,7 +34,7 @@ export function BlogPreviewSection({ data }: BlogPreviewProps) {
           </p>
         </div>
 
-         <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border">
+        <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border">
           <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Posts:
           </span>
