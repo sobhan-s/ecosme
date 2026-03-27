@@ -1,4 +1,5 @@
 import type { SiteSettings } from '@/interface/sanity.types';
+import Link from 'next/link';
 
 interface FooterProps {
   settings?: SiteSettings | null;
@@ -23,7 +24,7 @@ export function Footer({ settings }: FooterProps) {
         {settings?.socialLinks && settings.socialLinks.length > 0 && (
           <div className="flex items-center gap-4">
             {settings.socialLinks.map((s, index) => (
-              <a
+              <Link
                 key={index}
                 href={s.url}
                 target="_blank"
@@ -31,7 +32,7 @@ export function Footer({ settings }: FooterProps) {
                 className="text-sm text-background/60 hover:text-background transition-colors"
               >
                 {s.platform}
-              </a>
+              </Link>
             ))}
           </div>
         )}

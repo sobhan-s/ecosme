@@ -51,13 +51,13 @@ export function Navbar({ settings }: NavbarProps) {
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -99,14 +99,14 @@ export function Navbar({ settings }: NavbarProps) {
       {open && (
         <div className="md:hidden bg-white border-t px-6 py-4 flex flex-col gap-4">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
               className="text-sm font-medium text-foreground"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="flex flex-col gap-2 pt-2 border-t">
             {session ? (
