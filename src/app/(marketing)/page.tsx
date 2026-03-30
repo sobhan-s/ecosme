@@ -8,7 +8,7 @@ import {
   getBlogPreviews,
 } from '@/lib/sanity/query';
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 import { HeroSection } from '@/components/sections/heroSections';
 import { AboutSection } from '@/components/sections/aboutSections';
@@ -36,7 +36,7 @@ export default async function HomePage() {
   return (
     <>
       <HeroSection data={hero} />
-      {/* <CustomersSection data={logos} /> */}
+      <CustomersSection data={logos} />
       <AboutSection data={about} />
       <WorkSection data={work} />
       <PricingSection data={pricing} />
