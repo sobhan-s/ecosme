@@ -12,7 +12,8 @@
     "test:commit": "pnpm run lint && pnpm run format:check",
     "commitlint": "commitlint --edit",
     "prepare": "husky",
-    "test": ""
+    "test": "vitest run",
+    "test:coverage": "vitest --coverage"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
@@ -56,6 +57,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.55.0",
     "@typescript-eslint/parser": "^8.55.0",
+    "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "eslint-config-prettier": "^10.1.1",
@@ -64,6 +66,7 @@
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.2"
   }
 }

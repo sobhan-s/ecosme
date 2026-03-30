@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { AboutSection } from '@/interface/sanity.types';
+import { DynamicIcon } from '@/utils/DynamicIcons';
 
 interface AboutProps {
   data: AboutSection | null;
@@ -55,7 +56,7 @@ export function AboutSection({ data }: AboutProps) {
                   <div className="flex flex-col items-center gap-1 shrink-0">
                     <div className="w-10 h-10 rounded-xl bg-[#F15A2B]/8 border border-[#F15A2B]/15 flex items-center justify-center group-hover:bg-[#F15A2B] transition-colors">
                       <span className="font-display font-black text-[#F15A2B] text-base group-hover:text-white transition-colors leading-none">
-                        0{i + 1}
+                        <DynamicIcon name={h?.icon} />
                       </span>
                     </div>
                   </div>
@@ -147,18 +148,18 @@ export function AboutSection({ data }: AboutProps) {
 
                 <div className="bg-[#f5f5f3] border border-border rounded-2xl p-7">
                   <p className="text-foreground text-lg leading-relaxed font-medium mb-5 italic">
-                    &ldquo;We don&apos;t just build websites — we build
-                    businesses. Every pixel, every interaction is
-                    intentional.&rdquo;
+                    &ldquo;We don&apos;t just manage files - we create
+                    certainty. Every report, every audit is proof of your
+                    excellence.&ldquo;
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-full bg-[#F15A2B]/15 flex items-center justify-center">
                       <span className="font-display font-black text-[#F15A2B] text-sm">
-                        C
+                        S
                       </span>
                     </div>
                     <div>
-                      <p className="font-semibold text-sm">Chris ecosme</p>
+                      <p className="font-semibold text-sm">Sobhan Sahoo</p>
                       <p className="text-muted-foreground text-xs">
                         Founder & Creative Director
                       </p>
