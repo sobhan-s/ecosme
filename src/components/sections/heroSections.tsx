@@ -80,7 +80,7 @@ export function HeroSection({ data }: HeroProps) {
               {d.subtext}
             </p>
             <p className="font-display font-bold text-base mt-4 italic text-foreground/70">
-              Captivate, Engage, and Inspire.
+              &quot;Centralize. Sync. Scale.&quot;
             </p>
           </div>
 
@@ -162,10 +162,10 @@ export function HeroSection({ data }: HeroProps) {
             </p>
             <div className="grid grid-cols-2 gap-2">
               {[
-                'Web Design',
-                'Graphic Design',
-                'Motion Graphic',
-                'Illustration',
+                'Cloud Storage',
+                'Smart Tagging',
+                'Version Control',
+                'Instant Sharing',
               ].map((tag) => (
                 <div
                   key={tag}
