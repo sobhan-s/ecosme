@@ -58,7 +58,7 @@ export function WorkSection({ data }: WorkProps) {
             </h2>
           </div>
           <p className="text-muted-foreground max-w-xs text-sm leading-relaxed md:text-right">
-            A selection of work we&apos;re proud of — from brand systems to
+            A selection of work we&apos;re proud of from brand systems to
             interactive experiences.
           </p>
         </div>

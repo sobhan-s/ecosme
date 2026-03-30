@@ -25,7 +25,7 @@ async function getStats() {
   }
 }
 
-export const metadata = { title: 'Dashboard — ecosme' };
+export const metadata = { title: 'Dashboard   ecosme' };
 
 export default async function DashboardPage() {
   const session = await auth.api.getSession({ headers: await headers() });

@@ -77,7 +77,7 @@ export const post = defineType({
       name: 'body',
       title: 'Full Body Content',
       type: 'array',
-      description: 'Full article content — only visible to logged-in users',
+      description: 'Full article content   only visible to logged-in users',
       of: [
         {
           type: 'block',

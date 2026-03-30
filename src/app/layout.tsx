@@ -15,8 +15,8 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: 'My App — Driving Digital Success',
-  description: 'Your trusted partner for all things digital.',
+  title: 'ecosme',
+  description: 'A digial asset managemnt platform',
 };
 
 export default function RootLayout({

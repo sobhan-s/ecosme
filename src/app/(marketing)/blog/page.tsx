@@ -57,7 +57,7 @@ export default async function BlogPage() {
               No posts yet
             </p>
             <p className="text-muted-foreground text-sm mt-3">
-              Check back soon — we&apos;re writing.
+              Check back soon we&apos;re writing.
             </p>
           </div>
         ) : (
