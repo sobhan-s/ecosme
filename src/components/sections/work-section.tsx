@@ -51,16 +51,7 @@ export function WorkSection({ data }: WorkProps) {
             <span className="inline-flex items-center border border-[#F15A2B] text-[#F15A2B] rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest mb-5">
               Our Work
             </span>
-            <h2 className="font-display font-black text-[clamp(2.5rem,5vw,4.5rem)] uppercase tracking-tight leading-[0.9]">
-              Projects That
-              <br />
-              Make an Impact
-            </h2>
           </div>
-          <p className="text-muted-foreground max-w-xs text-sm leading-relaxed md:text-right">
-            A selection of work we&apos;re proud of from brand systems to
-            interactive experiences.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
